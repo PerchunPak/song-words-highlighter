@@ -1,32 +1,26 @@
 <script context="module">
-  const players = new Set()
+	const players = new Set();
 
-  export function stopAll() {
-    players.forEach(p => p.pause())
-  }
+	export function stopAll() {
+		players.forEach((p) => p.pause());
+	}
 </script>
 
 <script>
-  import { onMount } from 'svelte'
+	import { onMount } from 'svelte';
 
-  export let src
+	export let src;
 
-  let player
+	let player;
 
-  onMount(() => {
-    // Like players.push(player)
-    players.add(player)
-  })
+	onMount(() => {
+		// Like players.push(player)
+		players.add(player);
+	});
 </script>
 
 <div>
-    <audio
-            bind:this={player}
-            {src}
-            controls
-            on:playing
-            on:timeupdate
-    >
-        <track kind="captions" />
-    </audio>
+	<audio bind:this={player} {src} controls on:playing on:timeupdate>
+		<track kind="captions" />
+	</audio>
 </div>
