@@ -150,6 +150,6 @@
     }
 
     p {
-        @apply transition-all ease-in-out
+        @apply transition-all ease-in-out text-xl pr-2
     }
 </style>
