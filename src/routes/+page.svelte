@@ -151,6 +151,10 @@
 </div>
 
 <style lang="postcss">
+	:global(html, body) {
+		@apply m-0 h-full overflow-hidden;
+	}
+
 	:global(html) {
 		@apply bg-white text-black;
 	}
