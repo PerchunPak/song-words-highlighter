@@ -33,11 +33,11 @@
 	}
 </script>
 
-<div class="m-10">
+<div class="m-6">
 	<div
-		class="m-10 mt-24 flex h-48 min-h-full items-center justify-center rounded border-2 border-black bg-gradient-to-l from-amethyst-400 to-amethyst-700"
+		class="m-10 flex h-48 min-h-full items-center justify-center rounded border-2 border-black bg-gradient-to-l from-amethyst-400 to-amethyst-700"
 	>
-		<p class="m-3 !text-5xl !text-stone-200 !font-bold" bind:this={currentStringElement} />
+		<p class="m-3 !text-5xl !text-stone-200 font-bold" bind:this={currentStringElement} />
 	</div>
 	<div bind:this={textElement} class="grid w-full grid-cols-4">
 		<div>
